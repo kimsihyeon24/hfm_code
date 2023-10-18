@@ -70,8 +70,7 @@ element delete_min_heap(HeapType* h)
 }
 
 // 이진 트리 생성 함수
-TreeNode* make_tree(TreeNode* left,
-	TreeNode* right)
+TreeNode* make_tree(TreeNode* left, TreeNode* right)
 {
 	TreeNode* node =
 		(TreeNode*)malloc(sizeof(TreeNode));
@@ -161,8 +160,8 @@ void huffman_tree(int freq[], char ch_list[], int n)
 int main(void)
 {
 	char ch_list[] = { 'a', 'e', 'i', 'o', 'u', 's', 't'};
-	int freq[] = { 10, 15, 12, 3, 4, 13, 1 };
-	huffman_tree(freq, ch_list, 7);
+	int freq[] = { 32, 12, 76, 59, 32, 55, 88, 26, 16, 79, 34, 85, 29, 78, 41, 56, 86 };
+	huffman_tree(freq, ch_list, 17);
 	return 0;
 }
 
